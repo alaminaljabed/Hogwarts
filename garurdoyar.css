@@ -1,0 +1,83 @@
+body {background:black;}
+
+
+
+@keyframes scribble {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+div#stripped {
+  max-width: 750px;
+  margin: 0 auto;
+  background: #000;
+  background-image: url('my.jpg');
+  background-size: cover;
+  font-size: 0;
+  
+  
+}
+div#stripped svg {
+  background: #000;
+  mix-blend-mode:darken ;
+  
+}
+
+div#stripped svg polyline {
+  fill: none;
+  stroke: white;
+  stroke-width: 200;
+  stroke-dasharray: 20000;
+  stroke-dashoffset: 20000;
+  animation: scribble 3s linear forwards;
+}
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  div#stripped {
+  background-image: url('my.jpg');
+  }
+}
+  @font-face { font-family:harrypotter;
+        src:url('xhp2.ttf');
+        
+       }     
+  @font-face{ font-family: Dumbledore;
+        src:url('xhp4.ttf');}
+        @font-face{ font-family: lucius;
+        src:url('xhp.ttf');}
+      @font-face{ font-family: grizzly;
+        src:url('xhp6.ttf');}
+        @font-face{ font-family: harmaini;
+        src:url('xhp7.ttf');}
+        p1{ font-family: harrypotter;
+           color:white;
+           font-size:4em;}
+           p3{ font-family: lucius;
+           color:white;
+           font-size:9em;}
+            p11{ font-family: lucius;
+           color:black;
+           font-size:6em;
+         }
+    p9{ font-family: cursive;
+           color:white;
+           font-size:4em;}
+           p5{ font-family: grizzly;
+           color:black;
+           font-size:4em;}
+       p6{ font-family: harmaini;
+           color:white;
+           font-size:4em;}
+       p2{font-family: Dumbledore;
+       color:white;
+       font-size:4em;}
+    p10{font-family:Times New Roman;
+        font-size:4em;
+        color:#ff7300;
+        }
+        p11{font-family:Times New Roman;
+        font-size:4em;
+        color:white;
+        }
+        

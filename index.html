@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> Hogwarts & Jabed </title>
+        <link rel="stylesheet" href="slytherin.css"/>
+        </head>
+<body>
+   
+<center><div class ="flicker"> Alamin's Webcastle</div></center>
+    
+<div class="buttons">
+    <div id="left">
+<a href="bio.html"><button id="link">
+   <p3> My Biography</p3>
+</button></a>
+<a href="dark.html"><button id="link">
+  <p6> Dark secrets</p6>
+</button></a>
+<button onclick="playAudio()"id="links">
+  <p11> play music</p11>
+</button>
+<a href="contacts.html"><button id="link">
+    <p9>Contacts 💌</p9>
+</button></a>
+<a href="hogwarts"><button id="link">
+    <p3> Hogwarts Library</p3>
+</button></a>
+<a href="photos"><button id="link">
+    <p6> vistas / photos
+</button></a>
+</div>
+<div id="right">
+    <div class="slideshow-container">
+        <img class="mySlides" src="my2.jpg">
+        <img class="mySlides" src="ss1.jpg">
+        <img class="mySlides" src="de.jpg">
+        <img class="mySlides" src="ss.jpg">
+    </div>
+</div>
+
+  </div>
+
+
+<script>
+function playAudio() {
+            var audio = new Audio("hp2.mp3"); 
+            audio.play(); 
+        }
+        var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+    </body>
+    </html>
