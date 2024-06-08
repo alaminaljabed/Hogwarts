@@ -68,7 +68,7 @@ body { background:url('hpb.jpg') no-repeat fixed;
          font-size: 8rem;
         
          color:black;
-         animation: flicker 0.5s linear infinite;
+         animation: flicker 1.5s linear infinite;
          font-family:harrypotter;  }
            @keyframes flicker {
          0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100%
